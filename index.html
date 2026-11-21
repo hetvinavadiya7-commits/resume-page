@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f4f0">
+    <meta name="description" content="Meet Alex Morgan, a product designer building thoughtful digital experiences.">
+    <title>Alex Morgan — Product Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="topbar">
+        <a class="wordmark" href="#" aria-label="Alex Morgan home">am<span>.</span></a>
+        <a class="availability" href="mailto:hello@alexmorgan.design">
+          <span class="availability-dot" aria-hidden="true"></span>
+          Available for select projects
+        </a>
+      </header>
+
+      <section class="profile-card" aria-labelledby="profile-name">
+        <div class="profile-main">
+          <div class="profile-intro">
+            <div class="avatar-wrap">
+              <img
+                class="avatar"
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=320&h=320&q=85"
+                alt="Portrait of Alex Morgan"
+                width="112"
+                height="112"
+              >
+              <span class="avatar-status" aria-label="Online"></span>
+            </div>
+            <div class="intro-copy">
+              <p class="eyebrow">Product designer <span aria-hidden="true">·</span> Brooklyn, NY</p>
+              <h1 id="profile-name">Alex Morgan</h1>
+              <p class="tagline">Turning complex ideas into simple, human experiences.</p>
+            </div>
+          </div>
+
+          <div class="profile-actions">
+            <a class="button button-primary" href="mailto:hello@alexmorgan.design">
+              Let’s talk
+              <svg aria-hidden="true" viewBox="0 0 20 20" fill="none">
+                <path d="M4.5 10h11m0 0-4.5-4.5M15.5 10 11 14.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <button class="button button-secondary" id="copy-email" type="button" data-email="hello@alexmorgan.design">
+              <svg aria-hidden="true" viewBox="0 0 20 20" fill="none">
+                <rect x="6.5" y="6.5" width="9" height="10" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M12.5 6.5V5.8A1.8 1.8 0 0 0 10.7 4h-5A1.7 1.7 0 0 0 4 5.7v6.6A1.7 1.7 0 0 0 5.7 14H6.5" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+              Copy email
+            </button>
+          </div>
+        </div>
+
+        <div class="profile-details">
+          <div class="about">
+            <p class="section-label">A little about me</p>
+            <p class="about-copy">
+              I’m a designer with 8 years of experience creating useful, delightful products.
+              I love asking good questions, making things with kind people, and finding the
+              little details that make a big difference.
+            </p>
+            <div class="social-links" aria-label="Social links">
+              <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+              <a href="https://www.behance.net/" target="_blank" rel="noreferrer">Behance <span aria-hidden="true">↗</span></a>
+              <a href="https://dribbble.com/" target="_blank" rel="noreferrer">Dribbble <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+
+          <div class="side-details">
+            <div class="stats" aria-label="Career highlights">
+              <div class="stat">
+                <strong>8<span>+</span></strong>
+                <span>years creating</span>
+              </div>
+              <div class="stat">
+                <strong>24</strong>
+                <span>products shipped</span>
+              </div>
+              <div class="stat">
+                <strong>06</strong>
+                <span>happy teams</span>
+              </div>
+            </div>
+            <div class="specialties">
+              <p class="section-label">What I do</p>
+              <div class="tags">
+                <span>Product strategy</span>
+                <span>UI / UX design</span>
+                <span>Design systems</span>
+                <span>Prototyping</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="page-footer">
+        <span>Thoughtful work, made together.</span>
+        <span>© <span id="current-year"></span> Alex Morgan</span>
+      </footer>
+      <p class="toast" id="toast" role="status" aria-live="polite"></p>
+    </main>
+  </body>
+</html>
